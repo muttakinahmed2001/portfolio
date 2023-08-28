@@ -1,8 +1,31 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_0bqc2ql",
+        "template_qdn48ph",
+        formRef.current,
+        "l0gFRAKguybB_s9FS"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div id="contact-section" className="bg-green-300 p-5">
       <h1 className="text-center mb-10 font-bold text-2xl sm:text-5xl items-center">
@@ -32,29 +55,34 @@ const Contact = () => {
           <h1 className="text-xl sm:text-3xl font-bold mb-5">
             Let’s Message me
           </h1>
-          <div className="form-control w-full max-w-xs my-3">
-            <input
-              type="text"
-              placeholder="Your name"
-              className="input input-bordered w-full max-w-xs"
-            />
-          </div>
-          <div className="form-control w-full max-w-xs">
-            <input
-              type="text"
-              placeholder="Your email"
-              className="input input-bordered w-full max-w-xs"
-            />
-          </div>
-          <textarea
-            placeholder="Message"
-            className="textarea mt-3 textarea-bordered textarea-lg w-full max-w-xs"></textarea>
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <div className="form-control w-full max-w-xs my-3">
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Your name"
+                className="input input-bordered w-full max-w-xs"
+              />
+            </div>
+            <div className="form-control w-full max-w-xs">
+              <input
+                type="text"
+                name="user_email"
+                placeholder="Your email"
+                className="input input-bordered w-full max-w-xs"
+              />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Message"
+              className="textarea mt-3 textarea-bordered textarea-lg w-full max-w-xs"></textarea>
 
-          <input
-            className="btn btn-accent mt-5 "
-            type="submit"
-            value="Submit"
-          />
+            <input
+              className="btn btn-accent mt-5 "
+              type="submit"
+              value="Submit"
+            />
+          </form>
         </div>
         <div></div>
       </div>
