@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+/** @type {import(AnextA).NextConfig} */
+const nextConfig = {};
 
-module.exports = nextConfig
+module.exports = nextConfig;
