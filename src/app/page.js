@@ -9,7 +9,7 @@ import Contact from "@/components/Contact";
 
 const HomePage = () => {
   return (
-    <div className="bg-white pt-5">
+    <div className="bg-white">
       <div className="flex flex-col-reverse sm:flex-row  justify-between items-center mt-20">
         <div>
           <p className="text-xl mb-3 mt-3">Hi, My name is</p>{" "}
