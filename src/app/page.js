@@ -21,7 +21,7 @@ const HomePage = () => {
             </h3>
           </div>
           <button className="btn btn-accent mt-5 inline me-3">
-            <Link href="https://docs.google.com/document/d/1PHNCxOfIpQ1szXWxm6s2fqhoCtedFtpSpSVLXUcRtCw/edit?usp=drive_link">
+            <Link href="https://drive.google.com/file/d/1HGn_Uus1TnQ9JF-uQSg8MxdKxwJvo8dW/view?usp=drive_link">
               Resume
             </Link>
           </button>
