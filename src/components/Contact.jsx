@@ -27,7 +27,7 @@ const Contact = () => {
       );
   };
   return (
-    <div id="contact-section" className="bg-green-300 p-5">
+    <div id="contact-section" className="bg-green-300 p-5 mb-10">
       <h1 className="text-center mb-10 font-bold text-2xl sm:text-5xl items-center">
         Contact Information
       </h1>
@@ -77,11 +77,13 @@ const Contact = () => {
               placeholder="Message"
               className="textarea mt-3 textarea-bordered textarea-lg w-full max-w-xs"></textarea>
 
-            <input
-              className="btn btn-accent mt-5 "
-              type="submit"
-              value="Submit"
-            />
+            <div className="flex justify-start">
+              <input
+                className="btn btn-accent mt-5 "
+                type="submit"
+                value="Submit"
+              />
+            </div>
           </form>
         </div>
         <div></div>

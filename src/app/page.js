@@ -10,8 +10,8 @@ import Contact from "@/components/Contact";
 const HomePage = () => {
   return (
     <div>
-      <div className="flex flex-col-reverse sm:flex-row  justify-between items-center mt-20">
-        <div>
+      <div className="flex flex-col-reverse sm:flex-row  justify-center items-center mt-20 ">
+        <div className="flex-1 ps-5">
           <p className="text-xl mb-3 mt-3">Hi, My name is</p>{" "}
           <h1 className="text-3xl sm:text-5xl font-bold">Muttakin Ahmed</h1>
           <div className="flex gap-2 mt-2">
@@ -29,13 +29,15 @@ const HomePage = () => {
             <Link href="#contact-section">Contact</Link>
           </button>
         </div>
-        <div className="w-[200px] h-[200px]  sm:w-[400px] sm:h-[400px] ">
+        <div className="w-full h-full flex-1 ">
           <Image src={profile} alt="Men"></Image>
         </div>
       </div>
-      <About></About>
-      <Skills></Skills>
-      <Contact></Contact>
+      <div className="px-10">
+        <About></About>
+        <Skills></Skills>
+        <Contact></Contact>
+      </div>
     </div>
   );
 };
