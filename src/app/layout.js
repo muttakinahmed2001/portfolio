@@ -6,15 +6,15 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Muttakin's Portfolio",
-  description: "Muttakin's Portfolio",
+  title: "Muttakin Ahmed",
+  description: "Muttakin Ahmed",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
-        <div className="container ">
+        <div>
           <Navbar></Navbar>
           {children}
           <Footer></Footer>
