@@ -22,7 +22,7 @@ const Skills = () => {
   const redux = ["/skills/redux.png"];
 
   return (
-    <div className=" my-20">
+    <div className=" my-20 text-black">
       <h1 className="text-5xl text-center mb-10  font-bold">My Skills</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div className="flex flex-col items-center">

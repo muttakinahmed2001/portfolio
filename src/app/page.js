@@ -33,11 +33,10 @@ const HomePage = () => {
           <Image src={profile} alt="Men"></Image>
         </div>
       </div>
-      <div className="container max-w-screen-xl mx-auto">
-        <About></About>
-        <Skills></Skills>
-        <Contact></Contact>
-      </div>
+
+      <About></About>
+      <Skills></Skills>
+      <Contact></Contact>
     </div>
   );
 };

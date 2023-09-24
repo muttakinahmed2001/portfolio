@@ -3,7 +3,7 @@ import about from "public/about-pick.jpg";
 
 const About = () => {
   return (
-    <div className="mt-20 flex gap-20 items-center  container max-w-screen-xl mx-auto px-5">
+    <div className="mt-20 flex gap-20 items-center  container max-w-screen-xl mx-auto px-5 text-black">
       <div className="flex-1">
         <h1 className="text-5xl font-bold mb-5">About Me</h1>
         <p>
