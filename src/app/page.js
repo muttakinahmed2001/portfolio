@@ -10,7 +10,7 @@ import Contact from "@/components/Contact";
 const HomePage = () => {
   return (
     <div>
-      <div className="flex flex-col-reverse sm:flex-row  justify-center items-center mt-20 ">
+      <div className="flex flex-col-reverse sm:flex-row  justify-center items-center mt-20 w-full ">
         <div className="flex-1 ps-5 text-black">
           <p className="text-xl mb-3 mt-3">Hi, My name is</p>{" "}
           <h1 className="text-3xl sm:text-5xl font-bold">Muttakin Ahmed</h1>
@@ -33,7 +33,7 @@ const HomePage = () => {
           <Image src={profile} alt="Men"></Image>
         </div>
       </div>
-      <div className="px-10">
+      <div className="container max-w-screen-xl mx-auto">
         <About></About>
         <Skills></Skills>
         <Contact></Contact>
