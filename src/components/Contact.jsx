@@ -31,7 +31,7 @@ const Contact = () => {
       <h1 className="text-center mb-10 font-bold text-2xl sm:text-5xl items-center">
         Contact Information
       </h1>
-      <div className="flex flex-col sm:flex-row gap-10">
+      <div className="flex flex-col sm:flex-row justify-center items-center">
         <div className="flex-1 my-3">
           <h1 className="text-xl sm:text-3xl font-bold mb-5">Lets Connect</h1>
           <p>Please fill out the form on this section to contact with me.</p>
