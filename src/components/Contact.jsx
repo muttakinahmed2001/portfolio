@@ -31,7 +31,7 @@ const Contact = () => {
       <h1 className="text-center mb-10 font-bold text-2xl sm:text-5xl items-center">
         Contact Information
       </h1>
-      <div className="flex flex-col sm:flex-row justify-center items-center">
+      <div className="flex flex-col sm:flex-row justify-center items-center container max-w-screen-xl mx-auto px-5 ">
         <div className="flex-1 my-3">
           <h1 className="text-xl sm:text-3xl font-bold mb-5">Lets Connect</h1>
           <p>Please fill out the form on this section to contact with me.</p>
@@ -51,7 +51,7 @@ const Contact = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col justify-center items-center ">
           <h1 className="text-xl sm:text-3xl font-bold mb-5">
             Let’s Message me
           </h1>
@@ -61,7 +61,7 @@ const Contact = () => {
                 type="text"
                 name="user_name"
                 placeholder="Your name"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs bg-white"
               />
             </div>
             <div className="form-control w-full max-w-xs">
@@ -69,13 +69,13 @@ const Contact = () => {
                 type="text"
                 name="user_email"
                 placeholder="Your email"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs bg-white"
               />
             </div>
             <textarea
               name="message"
               placeholder="Message"
-              className="textarea mt-3 textarea-bordered textarea-lg w-full max-w-xs"></textarea>
+              className="textarea mt-3 textarea-bordered textarea-lg w-full max-w-xs bg-white"></textarea>
 
             <div className="flex justify-start">
               <input
