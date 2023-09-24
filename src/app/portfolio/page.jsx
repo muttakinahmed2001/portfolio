@@ -55,7 +55,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="grid   sm:grid-cols-3 gap-10">
+    <div className="grid   sm:grid-cols-3 gap-10 container max-w-screen-xl mx-auto px-5 text-black">
       {projects.map((project, index) => (
         <div
           key={index}
