@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="flex flex-col-reverse sm:flex-row  justify-center items-center mt-20 ">
-        <div className="flex-1 ps-5">
+        <div className="flex-1 ps-5 text-black">
           <p className="text-xl mb-3 mt-3">Hi, My name is</p>{" "}
           <h1 className="text-3xl sm:text-5xl font-bold">Muttakin Ahmed</h1>
           <div className="flex gap-2 mt-2">
