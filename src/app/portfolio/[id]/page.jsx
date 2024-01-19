@@ -120,7 +120,7 @@ const Project = ({ params }) => {
           <ol type="1">
             {selectedProject.features.map((feature, index) => (
               <li className="mt-3 font-semibold" key={index}>
-                $ {feature.description}
+                {feature.description}
               </li>
             ))}
           </ol>
