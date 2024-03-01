@@ -85,6 +85,33 @@ const Project = ({ params }) => {
         },
       ],
     },
+    {
+      id: 4,
+      img1: "/projects/image-gallery-five-xi.vercel.app_.png",
+      img2: "/projects/image-gallery-five-xi.vercel.app_ (1).png",
+      img3: "/projects/image-gallery-five-xi.vercel.app_ (2).png",
+
+      title: "Image-Gallery",
+      liveLink: "https://image-gallery-five-xi.vercel.app/",
+      gitClient: "https://github.com/muttakinahmed2001/image-gallery",
+      gitServer: "",
+      details:
+        "Welcome to the Image Gallery Project, a robust web application designed to offer a seamless experience for managing your image collection. This project focuses on three key functionalities: image upload, selection, and deletion, providing users with a comprehensive tools for efficient image management.",
+      features: [
+        {
+          description:
+            "Add your favorite photos to the gallery effortlessly using a simple and user-friendly upload feature.",
+        },
+        {
+          description:
+            "Navigate through your pictures easily by selecting and viewing specific ones with a simple click.",
+        },
+        {
+          description:
+            "Keep your gallery tidy by easily deleting pictures you don't need, making it a breeze to manage your collection.",
+        },
+      ],
+    },
   ];
 
   const selectedProject = projects.find((project) => project.id === id);

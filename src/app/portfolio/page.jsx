@@ -52,6 +52,22 @@ const Portfolio = () => {
       },
       id: 3,
     },
+    {
+      img1: "/public/projects/image-gallery-five-xi.vercel.app_.png",
+      img2: "",
+      img3: "",
+      title: "Image-Gallery",
+      liveLink: "https://image-gallery-five-xi.vercel.app/",
+      gitClient: "https://github.com/muttakinahmed2001/image-gallery",
+      gitServer: "",
+      details: "",
+      features: {
+        feature1: "",
+        feature2: "",
+        feature3: "",
+      },
+      id: 3,
+    },
   ];
 
   return (

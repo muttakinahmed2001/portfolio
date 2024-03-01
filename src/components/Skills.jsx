@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const Skills = () => {
   const frontend = [
-    "/skills/html.png",
-    "/skills/css.png",
-    "/skills/bootstrap.png",
-    "/skills/tailwind.png",
+    "/public/skills/html.jpg",
+    "/public/skills/css.jpg",
+    "/public/skills/bootstrap.jpg",
+    "/public/skills/tailwind.jpg",
     "/skills/daisy.png",
     "/skills/javascript.png",
     "/skills/react.png",
